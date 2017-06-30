@@ -5,11 +5,11 @@ pushd "%~dp0"
 if "%~1" == "talk_widget" goto talker
 @echo off
 :auth
-echo ‘®§¤ âì ­®¢ë© ¨­¤¨ä¨ª â®à ¨«¨ ¯®¤ª«îç¨âìáï ª ã¦¥ áãé¥áâ¢ãîé¥¬ã^?
+echo Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ð½Ð¾Ð²Ñ‹Ð¹ Ð¸Ð½Ð´Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€ Ð¸Ð»Ð¸ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ðº ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÑŽÑ‰ÐµÐ¼Ñƒ^?
 echo ________________________________________________________________
 echo.
-echo 1 ^| ®¤ª«îç¨âìáï ª ç âã ^| 
-echo 2 ^| ‘®§¤ âì ^|  
+echo 1 ^| ÐŸÐ¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ðº Ñ‡Ð°Ñ‚Ñƒ ^| 
+echo 2 ^| Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ ^|  
 set /p var="> "
 echo.
 
@@ -17,17 +17,17 @@ if %var% equ 1 goto first
 if %var% equ 2 goto second
 
 cls
-echo "%var%" ­¥¯à ¢¨«ì­ë© ®â¢¥â.
+echo "%var%" Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð¾Ñ‚Ð²ÐµÑ‚.
 echo.
 goto auth
 
 :second
 cls
-echo ‘®§¤ âì ç â ¨«¨  ªª ã­â^?
+echo Ð¡Ð¾Ð·Ð´Ð°Ñ‚ÑŒ Ñ‡Ð°Ñ‚ Ð¸Ð»Ð¸ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚^?
 echo _________________________
 echo.
-echo 1 ^| €ªª ã­â ^| 
-echo 2 ^| — â ^|
+echo 1 ^| ÐÐºÐºÐ°ÑƒÐ½Ñ‚ ^| 
+echo 2 ^| Ð§Ð°Ñ‚ ^|
 set /p var="> "
 echo.
 
@@ -35,20 +35,20 @@ if %var% equ 1 goto one
 if %var% equ 2 goto second
 
 cls
-echo "%var%" ­¥¯à ¢¨«ì­ë© ®â¢¥â.
+echo "%var%" Ð½ÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð¾Ñ‚Ð²ÐµÑ‚.
 echo.
 goto auth
 
 :one
 cls
-echo ¨ª­¥©¬:
+echo ÐÐ¸ÐºÐ½ÐµÐ¹Ð¼:
 set /p nickname=^> 
-if EXIST assets\%nickname%_name.dll (cls & echo ’ ª®© ¯®«ì§®¢ â¥«ì ã¦¥ áãé¥áâ¢ã¥â. & echo _________________________________ & ping -n 3 localhost > Nul & cls & goto auth ) ELSE cls & goto m54
+if EXIST assets\%nickname%_name.dll (cls & echo Ð¢Ð°ÐºÐ¾Ð¹ Ð¿Ð¾Ð»ÑŒÐ·Ð¾Ð²Ð°Ñ‚ÐµÐ»ÑŒ ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚. & echo _________________________________ & ping -n 3 localhost > Nul & cls & goto auth ) ELSE cls & goto m54
 :m54
-echo “áâ ­®¢¨â¥ ¯ à®«ì ­   ªª ã­â.
+echo Ð£ÑÑ‚Ð°Ð½Ð¾Ð²Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ Ð½Ð° Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚.
 set /p passw=^>
 cls
-echo “á¯¥è­® á®§¤ ­!
+echo Ð£ÑÐ¿ÐµÑˆÐ½Ð¾ ÑÐ¾Ð·Ð´Ð°Ð½!
 echo _______________
 ping -n 3 localhost > Nul
 cls
@@ -60,10 +60,10 @@ goto auth
 
 :second
 cls
-echo ˆ¬ï ç â :
+echo Ð˜Ð¼Ñ Ñ‡Ð°Ñ‚Ð°:
 set /p chat=^> 
-IF EXIST assets\IND_%chat% (cls & echo ’ ª®© ç â ã¦¥ áãé¥áâ¢ã¥â. & echo __________________________ & ping -n 3 localhost > Nul & cls & goto auth) ELSE echo “á¯¥è­®! & echo ___________ & ping -n 3 localhost > Nul & cls
-echo ‚¢¥¤¨â¥ ¢ è ­¨ª: 
+IF EXIST assets\IND_%chat% (cls & echo Ð¢Ð°ÐºÐ¾Ð¹ Ñ‡Ð°Ñ‚ ÑƒÐ¶Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚. & echo __________________________ & ping -n 3 localhost > Nul & cls & goto auth) ELSE echo Ð£ÑÐ¿ÐµÑˆÐ½Ð¾! & echo ___________ & ping -n 3 localhost > Nul & cls
+echo Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð²Ð°Ñˆ Ð½Ð¸Ðº: 
 set /p nick=^> 
 md assets\IND_%chat%
 set /a 1+5*%random%/32768
@@ -71,22 +71,22 @@ echo %chat%%random%>> assets\IND_%chat%\ind_%chat%.dll
 echo %nick%>> assets\IND_%chat%\admins.dll 
 set /p info=< assets\IND_%chat%\ind_%chat%.dll
 cls
-echo ‚ è ¨­¤¨ä¨ª â®à, § ¯®¬­¨â¥ ¨«¨ § ¯¨è¨â¥ ¥£®: %info% (§ ªà®¥âáï ç¥à¥§ 10 á¥ª.) & ping -n 11 localhost > Nul & cls & goto auth
+echo Ð’Ð°Ñˆ Ð¸Ð½Ð´Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€, Ð·Ð°Ð¿Ð¾Ð¼Ð½Ð¸Ñ‚Ðµ Ð¸Ð»Ð¸ Ð·Ð°Ð¿Ð¸ÑˆÐ¸Ñ‚Ðµ ÐµÐ³Ð¾: %info% (Ð·Ð°ÐºÑ€Ð¾ÐµÑ‚ÑÑ Ñ‡ÐµÑ€ÐµÐ· 10 ÑÐµÐº.) & ping -n 11 localhost > Nul & cls & goto auth
 
 
 :first
 cls
-echo ‹®£¨­:
+echo Ð›Ð¾Ð³Ð¸Ð½:
 set /p login=^> 
-if EXIST assets\%login%_name.dll (cls & echo “á¯¥è­®! & echo ____________ & ping -n 3 localhost > Nul & cls) else cls & Echo ’ ª®£®  ªª ã­â  ­¥â, § à¥£¨áâà¨àã©â¥áì. & echo ______________________________________ & ping -n 3 localhost > Nul & cls & goto auth
-echo ‚¢¥¤¨â¥ ¨¬ï á¥â¨:
+if EXIST assets\%login%_name.dll (cls & echo Ð£ÑÐ¿ÐµÑˆÐ½Ð¾! & echo ____________ & ping -n 3 localhost > Nul & cls) else cls & Echo Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚Ð° Ð½ÐµÑ‚, Ð·Ð°Ñ€ÐµÐ³Ð¸ÑÑ‚Ñ€Ð¸Ñ€ÑƒÐ¹Ñ‚ÐµÑÑŒ. & echo ______________________________________ & ping -n 3 localhost > Nul & cls & goto auth
+echo Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð¼Ñ ÑÐµÑ‚Ð¸:
 set /p chat=^>
-echo ‚¢¥¤¨â¥ ¨­¤¨ä¨ª â®à:
+echo Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¸Ð½Ð´Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€:
 set /p indef=^>
 set nick=%login%
-IF EXIST assets\IND_%chat% (goto three) else (cls & echo ’ ª®£® ç â  ­¥ áãé¥áâ¢ã¥â, ¢ë¡¥à¨â¥ 2 ¯ã­ªâ ¨§ ¬¥­î. & echo ____________________________________________________ & goto auth)
+IF EXIST assets\IND_%chat% (goto three) else (cls & echo Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ñ‡Ð°Ñ‚Ð° Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚, Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ 2 Ð¿ÑƒÐ½ÐºÑ‚ Ð¸Ð· Ð¼ÐµÐ½ÑŽ. & echo ____________________________________________________ & goto auth)
 cls
-echo ’ ª®£® ç â  ­¥ áãé¥áâ¢ã¥â, ¢ë¡¥à¨â¥ 2 ¯ã­ªâ ¨§ ¬¥­î.
+echo Ð¢Ð°ÐºÐ¾Ð³Ð¾ Ñ‡Ð°Ñ‚Ð° Ð½Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚, Ð²Ñ‹Ð±ÐµÑ€Ð¸Ñ‚Ðµ 2 Ð¿ÑƒÐ½ÐºÑ‚ Ð¸Ð· Ð¼ÐµÐ½ÑŽ.
 echo ____________________________________________________
 ping -n 5 localhost > Nul
 goto auth
@@ -94,11 +94,11 @@ goto auth
 :three
 set /p comment1=< assets\IND_%chat%\admins.dll
 set /p pass=< assets\%login%_pass.dll
-if %nick%==%comment1% echo ‚¢¥¤¨â¥ ¯ à®«ì: & set /p pas1=^> & goto me4
+if %nick%==%comment1% echo Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¿Ð°Ñ€Ð¾Ð»ÑŒ: & set /p pas1=^> & goto me4
 set /p comment=< assets\IND_%chat%\ind_%chat%.dll
-if %indef%==%comment% (cls & echo à¨­ïâ® & echo ___________ & goto m3) else cls & echo ¥¯à ¢¨«ì­®¥ ¨¬ï ç â  ¨«¨ ¨­¤¨ä¨ª â®à. & echo ______________________________________ & ping -n 3 localhost > Nul & goto auth
+if %indef%==%comment% (cls & echo ÐŸÑ€Ð¸Ð½ÑÑ‚Ð¾ & echo ___________ & goto m3) else cls & echo ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ð¾Ðµ Ð¸Ð¼Ñ Ñ‡Ð°Ñ‚Ð° Ð¸Ð»Ð¸ Ð¸Ð½Ð´Ð¸Ñ„Ð¸ÐºÐ°Ñ‚Ð¾Ñ€. & echo ______________________________________ & ping -n 3 localhost > Nul & goto auth
 :me4
-if %pas1%==%pass% (cls & echo „®áâã¯ ¯®«ãç¥­! & echo _______________ & ping -n 3 localhost > Nul & cls & goto m3) else cls & echo „®áâã¯ § ¯à¥éñ­! & echo _______________ & ping -n 3 localhost > Nul & cls & goto auth
+if %pas1%==%pass% (cls & echo Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð¿Ð¾Ð»ÑƒÑ‡ÐµÐ½! & echo _______________ & ping -n 3 localhost > Nul & cls & goto m3) else cls & echo Ð”Ð¾ÑÑ‚ÑƒÐ¿ Ð·Ð°Ð¿Ñ€ÐµÑ‰Ñ‘Ð½! & echo _______________ & ping -n 3 localhost > Nul & cls & goto auth
 
 :m3
 md lib
@@ -120,12 +120,12 @@ set nick=%~3
 cls
 call title "| Chat: %chat% | User: %nick% |"
 call ::cs_in
-echo (%TIME% %nick% ¯à¨á®¥¤¨­¨«áï)>lib\%chat%
+echo (%TIME% %nick% Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ð»ÑÑ)>lib\%chat%
 call ::cs_out
-echo (%TIME% %nick% ¯à¨á®¥¤¨­¨«áï)>>lib\%chat%_history
+echo (%TIME% %nick% Ð¿Ñ€Ð¸ÑÐ¾ÐµÐ´Ð¸Ð½Ð¸Ð»ÑÑ)>>lib\%chat%_history
 :talker_loop
 cls
-echo ‚¢®¤:
+echo Ð’Ð²Ð¾Ð´:
 set /p msg=^>
 set msg=%msg:&=%
 set msg=%msg:[=%
@@ -134,17 +134,17 @@ set msg=%msg:>=%
 set msg=%msg:<=%
 set mds=%msg%
 set mds=%mds: =%
-if %mds%==/exit (echo ^(%TIME% %nick% ¢ëè¥«^) & exit exitCode )>lib\%chat%
-if %mds%==/exit (echo ^(%TIME% %nick% ¢ëè¥«^) & exit exitCode )>>lib\%chat%_history
+if %mds%==/exit (echo ^(%TIME% %nick% Ð²Ñ‹ÑˆÐµÐ»^) & exit exitCode )>lib\%chat%
+if %mds%==/exit (echo ^(%TIME% %nick% Ð²Ñ‹ÑˆÐµÐ»^) & exit exitCode )>>lib\%chat%_history
 if %mds%==/boobs (set msg=^(.^)^(.^))>lib\%chat%
 if %mds%==/boobs (set msg=^(.^)^(.^))>lib\%chat%_history
 if %mds%==/name (set /p nick="")>lib\%chat%
-if %mds%==/name (set msg=á¬¥­¨« ¨¬ï ­  %nick%)>lib\%chat%_history
+if %mds%==/name (set msg=ÑÐ¼ÐµÐ½Ð¸Ð» Ð¸Ð¼Ñ Ð½Ð° %nick%)>lib\%chat%_history
 call ::cs_in
 set /p nc=< assets\IND_%chat%\admins.dll
-if %nick%==%nc% (echo €¤¬¨­_[%TIME% %nick%]: %msg%>lib\%chat%) else echo [%TIME% %nick%]: %msg%>lib\%chat%
+if %nick%==%nc% (echo ÐÐ´Ð¼Ð¸Ð½_[%TIME% %nick%]: %msg%>lib\%chat%) else echo [%TIME% %nick%]: %msg%>lib\%chat%
 call ::cs_out
-if %nick%==%nc% (echo €¤¬¨­_[%TIME% %nick%]: %msg%>>lib\%chat%_history) else echo [%TIME% %nick%]: %msg%>>lib\%chat%_history
+if %nick%==%nc% (echo ÐÐ´Ð¼Ð¸Ð½_[%TIME% %nick%]: %msg%>>lib\%chat%_history) else echo [%TIME% %nick%]: %msg%>>lib\%chat%_history
 goto talker_loop
 :cs_in
 if exist "lib\%chat%_cs" ping 127.0.0.1 -n 1 -w 50 > nul
